@@ -1,0 +1,14 @@
+@import "./sass/components/config"; 
+@import "./sass/components/mixins";
+@import "./sass/components/general";
+@import "./sass/layout/navbar";
+@import "./sass/pages/home/home-hero";
+@import "./sass/pages/about";
+@import "./sass/pages/agency";
+@import "./sass/pages/business";
+@import "./sass/pages/contact";
+@import "./sass/pages/individuals";
+@import "./sass/pages/pricing";
+@import "./sass/layout/footer";
+
+//must be imported in the right order
