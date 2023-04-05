@@ -1,8 +1,6 @@
 header {
-    height: 100vh;
     display: grid;
     place-items: center;
-    overflow: hidden;
 
     .hero {
         margin-top: 5rem;
@@ -36,8 +34,8 @@ header {
 
         .hero_image-2 {
             position: absolute;
-            width: 18%;
-            left: 63rem;
+            width: 17.5%;
+            left: 62.5rem;
             top: 17rem;
         }
     }

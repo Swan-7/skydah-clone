@@ -5,10 +5,11 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
-    color: $grey-color;
-    font-size: 0.688rem;
+    color: $grey-color-light;
     background-color: rgba($background-color, 0.1);
-    user-select: none;
+    // user-select: none;
+    margin-bottom: 25rem;
+    overflow-x: hidden;
 }
 
 .container {
@@ -16,10 +17,26 @@ body {
     margin: 0 auto;
 }
 
+section {
+    text-align: center;
+}
+
+.section_header {
+    h2 {
+        margin-bottom: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+h1, h2, h3 {
+    color: $grey-color;
+}
+
 p {
     
     font-family: 'Nunito Sans', sans-serif;
-    line-height: normal;
+    line-height: 1.4;
+    font-size: 0.87rem;
     color: $grey-color-light;
 }
 
@@ -41,3 +58,7 @@ img {
     border: 1px solid $primary-color;
     padding: 0.3rem 2.9rem;
 } 
+
+h2 {
+    font-size: 1.7rem;
+}

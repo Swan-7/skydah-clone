@@ -1,7 +1,7 @@
 nav {
     width: 100vw;
     height: 5rem;
-    position: fixed;
+    position: relative;
     z-index: 10;
     display: grid;
     place-items: center;
@@ -37,6 +37,7 @@ nav {
             align-items: center;
 
             a {
+                font-size: 11px;
                 line-height: 2.5;
                 position: relative;
                 transition: all 400ms ease;
@@ -55,6 +56,10 @@ nav {
                     height: 1.3px;
                     background: $secondary-color;
                 }
+            }
+
+            .btn {
+                font-size: 12px;
             }
         }
     }

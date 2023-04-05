@@ -1,0 +1,40 @@
+section {
+    position: relative;
+    top: -1rem;
+
+    .service_content {
+        width: 59.5%;
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.65rem;
+
+        article {
+            border-radius: 10px;
+            box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.2);
+
+            .article_container {
+                width: 14.5rem;
+                height: 12rem;
+
+                .icon {
+                    width: 4.4rem;
+                    margin: 1rem auto 1.5rem;
+                    background: $primary-color-light;
+                    padding: 0.8rem;
+                    border-radius: 50%;
+                }
+
+                .icon-2 {
+                    background: $secondary-color-light;
+                }
+
+                p {
+                    padding: 1rem 2rem;
+                    font-size: 0.6rem;
+                    color: $grey-color-lighter;
+                }
+            }
+        }
+    }
+}
