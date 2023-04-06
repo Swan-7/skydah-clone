@@ -1,0 +1,87 @@
+.subscribe_container {
+    display: grid;
+    grid-template-columns: 51.5% 28.5% 20%;
+    background: $primary-color;
+    align-items: center;
+    height: 20.7rem;
+    position: relative;
+    margin-top: 13rem;
+
+    .subscribe_phone-mockup {
+        position: absolute;
+        width: 47.5%;
+        top: -13rem;
+        left: 1.1rem;
+    }
+
+    .subscribe_article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        h2,
+        p {
+            color: $white-color;
+            text-align: start;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+        }
+
+        .subscribe_form {
+            display: flex;
+            align-items: center;
+            border: 1px solid $white-color;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            border-radius: 0.4rem;
+            width: 100%;
+
+            #email {
+                background: $primary-color;
+                flex-grow: 1;
+                margin-left: 0.4rem;
+                padding: 0.8rem;
+
+                &::placeholder {
+                    font-size: 0.68rem;
+                    color: $white-color;
+                }
+            }
+
+            button {
+                flex-grow: 0;
+                background: $secondary-color;
+                padding: 0.89rem;
+                width: 2.7rem;
+                height: 2.7rem;
+                border-radius: 0.4rem;
+
+                img {
+                    // height: 100%;
+                    // width: 100%;
+                }
+            }
+        }
+    }
+
+    .subscribe_image-1 {
+        .right_man {
+            position: absolute;
+            top: -13.1rem;
+            left: 55rem;
+            width: 30%;
+        }
+    }
+
+    .subscribe_image-2 {
+        position: absolute;
+        width: 13%;
+        left: 3rem;
+        top: 13.7rem;
+    }
+}
