@@ -1,0 +1,103 @@
+.choose_us-section {
+    margin: 10rem auto 0;
+    position: relative;
+
+    .section_content {
+        width: 78%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        transform: translateX(2%);
+
+        .section_article {
+            text-align: start;
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 500;
+                margin-bottom: 1.1rem;
+            }
+
+            p {
+                width: 75%;
+            }
+
+            .section_cards {
+                width: 90%;
+                display: grid;
+                margin: 2rem 0;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+
+                article {
+                    border-radius: 10px;
+                    box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 1);
+                    width: 6rem;
+                    margin-bottom: 1rem;
+
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        color: $grey-color-2;
+                        margin-bottom: 2.1rem;
+                    }
+
+                    .card_icon {
+                        width: 2.8rem;
+                        margin: 1rem auto 0.6rem;
+                        background: $secondary-color-light;
+                        padding: 0.7rem;
+                        border-radius: 50%;
+                        border: 1.5px solid $secondary-color;
+                    }
+                }
+            }
+
+            .card_btn {
+                line-height: 1.5;
+                padding: 0.5rem .7rem 0.3rem 0.5rem;
+                border-radius: 0.5rem;
+                border: 1px solid #C4C4C4;
+                background: transparent;
+
+
+                .btn_container {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    img {
+                        width: 1rem;
+                        height: 1.15rem;
+                        margin: 0 0.6rem 0.2rem .3rem;
+                    }
+    
+                    .btn_text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        .text {
+                            color: $grey-color-lighter;
+                            font-size: 0.5rem;
+                        }
+
+                        .bold-text {
+                            font-size: 0.75rem;
+                            font-weight: 600;
+                            color: #3D4C59;
+                        }
+                    }
+                }
+            }
+
+            .left_graphic {
+                position: absolute;
+                left: 70rem;
+                top: 8.5rem;
+            }
+        }
+    }
+}
