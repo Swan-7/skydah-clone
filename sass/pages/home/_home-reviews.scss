@@ -1,0 +1,40 @@
+.reviews {
+    width: 58%;
+    margin: 10rem auto 0;
+    left: -1.5rem;
+
+    .review_header {
+        text-align: center;
+
+        h2 {
+            font-weight: 500;
+            margin: 0.5rem 0;
+        }
+    }
+
+    .swiper {
+        // margin: 8rem 4rem;
+        // padding: 0 1rem;
+    
+        
+    
+        .swiper-wrapper {
+            // margin: 6rem;
+        padding: 3rem 3rem 5rem;
+    
+            .swiper-slide {
+                padding: 1.5rem 2rem;
+                width: 10rem;
+                // border-radius: 1rem;
+                cursor: default;
+                font-size: 0.9rem;
+                width: 15rem;
+                box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.5);
+    
+                img {
+                    width: 5%;
+                }
+            }
+        }
+    }
+}
