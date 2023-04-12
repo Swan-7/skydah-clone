@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    width: 58%;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 2rem;
+
+    .partnership_article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 30rem;
+
+        h2 {
+            text-align: start;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .partners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .partner-girl {
+        position: absolute;
+        width: 80%;
+        left: 26rem;
+        top: -11.4rem;
+    }
+}

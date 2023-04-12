@@ -1,39 +1,133 @@
 .reviews {
-    width: 58%;
-    margin: 10rem auto 0;
-    left: -1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 
     .review_header {
-        text-align: center;
+        margin-bottom: 2.5rem;
 
         h2 {
-            font-weight: 500;
-            margin: 0.5rem 0;
+            margin-bottom: 0.2rem;
         }
     }
 
-    .swiper {
-        // margin: 8rem 4rem;
-        // padding: 0 1rem;
-    
-        
-    
-        .swiper-wrapper {
-            // margin: 6rem;
-        padding: 3rem 3rem 5rem;
-    
-            .swiper-slide {
-                padding: 1.5rem 2rem;
-                width: 10rem;
-                // border-radius: 1rem;
-                cursor: default;
-                font-size: 0.9rem;
-                width: 15rem;
-                box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.5);
-    
-                img {
-                    width: 5%;
+    .review-container {
+        position: relative;
+        max-width: 46rem;
+        margin: 0 auto;
+        width: 100%;
+        // border: 1px solid greenyellow;
+
+        .box {
+            width: 100%;
+            // border: 1px solid black;
+            // padding: 40px;
+
+            .content {
+                position: relative;
+                left: -3rem;
+                display: flex;
+                // gap: 1.3rem;
+                // border: 1px solid palevioletred;
+                overflow: hidden;
+                padding: 3rem 0.7rem 3rem 3rem;
+
+                .card {
+                    width: 10.3rem;
+                    height: 10.94rem;
+                    background: $white-color;
+                    border-radius: 0.32rem;
+                    box-shadow: 0 2.2rem 1rem rgba($shadow-color, 0.4);
+
+                    .card-content {
+                        padding: 0.8rem;
+
+                        .card-head {
+                            display: flex;
+                            align-items: center;
+
+                            img {
+                                width: 3.12rem;
+                                height: 3.12rem;
+                                object-fit: cover;
+                                margin-bottom: 1.3rem;
+                                margin-right: 0.9rem;
+                            }
+
+                            .card-header {
+                                justify-content: space-between;
+                                margin-bottom: 0.9rem;
+
+                                h5 {
+                                    font-weight: 500;
+                                    font-size: 0.68rem;
+                                    padding-bottom: 0.3rem;
+                                }
+
+                                p {
+                                    font-size: 0.5rem;
+                                    color: $grey-color-lighter;
+                                }
+                            }
+                        }
+
+                        p {
+                            text-align: start;
+                            font-size: 0.67rem;
+                            line-height: 1.6;
+                            color: $grey-color-lighter;
+                        }
+
+                        .quote {
+                            width: 1.25rem;
+                            position: absolute;
+                        }
+
+                        .quote-1 {
+                            top: 0.5rem;
+                            left: 12.5rem;
+                        }
+
+                        .quote-2 {
+                            top: 0.5rem;
+                            left: 12.5rem;
+                        }
+
+                        .quote-3 {
+                            top: 0.5rem;
+                            left: 12.5rem;
+                        }
+                    }
                 }
+            }
+
+            .arrow-box {
+                background: $white-color;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                border-radius: 14px;
+                box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.3);
+
+                .arrow {
+                    width: 1.2rem;
+                }
+            }
+
+
+            .prev {
+                top: 5.5rem;
+                left: -7.5rem;
+            }
+
+            .next {
+                top: 5.5rem;
+                left: 50rem;
             }
         }
     }

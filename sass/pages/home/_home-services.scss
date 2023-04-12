@@ -13,6 +13,8 @@ section {
             .article_container {
                 width: 14.5rem;
                 height: 12rem;
+                border-radius: 0.32rem;
+                box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.3);
 
                 .icon {
                     width: 4.4rem;
