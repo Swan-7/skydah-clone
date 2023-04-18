@@ -53,44 +53,6 @@
                 }
             }
 
-            .card_btn {
-                line-height: 1.5;
-                padding: 0.5rem .7rem 0.3rem 0.5rem;
-                border-radius: 0.5rem;
-                border: 1px solid $background-color;
-                background: transparent;
-
-
-                .btn_container {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-
-                    img {
-                        width: 1rem;
-                        height: 1.15rem;
-                        margin: 0 0.6rem 0.2rem .3rem;
-                    }
-    
-                    .btn_text {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: flex-start;
-
-                        .text {
-                            color: $grey-color-lighter;
-                            font-size: 0.5rem;
-                        }
-
-                        .bold-text {
-                            font-size: 0.75rem;
-                            font-weight: 600;
-                            color: #3D4C59;
-                        }
-                    }
-                }
-            }
-
             .left_graphic {
                 position: absolute;
                 left: 70rem;

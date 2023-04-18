@@ -1,20 +1,21 @@
 @import "./sass/components/config"; 
-@import "./sass/components/mixins";
+@import "./sass/components/button";
+@import "./sass/components/cards";
 @import "./sass/components/general";
 @import "./sass/layout/navbar";
-@import "./sass/pages/home/home-hero";
-@import "./sass/pages/home/home-services";
-@import "./sass/pages/home/home-chooseUs";
-@import "./sass/pages/home/home-subscription";
-@import "./sass/pages/home/home-reviews";
-@import "./sass/pages/home/home-partnership";
-@import "./sass/pages/home/home-download";
+@import "./sass/layout/hero";
+@import "./sass/pages/home/hero";
+@import "./sass/pages/home/services";
+@import "./sass/pages/home/chooseUs";
+@import "./sass/pages/home/subscription";
+@import "./sass/pages/home/partnership";
+@import "./sass/pages/home/download";
+@import "./sass/layout/footer";
 @import "./sass/pages/about";
 @import "./sass/pages/agency";
 @import "./sass/pages/business";
 @import "./sass/pages/contact";
 @import "./sass/pages/individuals";
 @import "./sass/pages/pricing";
-@import "./sass/layout/footer";
 
 //must be imported in the right order

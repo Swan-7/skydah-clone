@@ -13,8 +13,6 @@ body {
     line-height: 1.2;
     color: $grey-color-light;
     background-color: $white-color;
-    // user-select: none;
-    margin-bottom: 25rem;
     overflow-x: hidden;
 }
 
@@ -28,8 +26,10 @@ section {
 }
 
 .section_header {
+    margin-bottom: 1.6rem;
+
     h2 {
-        margin-bottom: 1.6rem;
+        margin-bottom: 0.6rem;
         font-weight: 500;
     }
 }
@@ -61,16 +61,6 @@ img {
     display: block;
     width: 100%;
 }
-
-.btn {
-    @include button();
-}
-
-.btn-primary {
-    @include button($primary-color, $white-color);
-    border: 1px solid $primary-color;
-    padding: 0.3rem 2.9rem;
-} 
 
 h2 {
     font-size: 1.7rem;

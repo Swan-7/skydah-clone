@@ -1,0 +1,32 @@
+.download-container {
+    background: $primary-color;
+    color: $white-color;
+    margin-top: 6.35rem;
+    padding: 5rem;
+
+    .download_header {
+        margin-bottom: 2rem;
+
+        h2 {
+            color: $white-color;
+            font-weight: 300;
+            font-family: 'Nunito Sans';
+            margin-bottom: 0.5rem;
+            margin-top: -0.5rem;
+        }
+    }
+ 
+    .left-girl {
+        position: absolute;
+        width: 38%;
+        top: -9.5rem;
+        left: 5rem;
+    }
+
+    .right-app {
+        position: absolute;
+        width: 39%;
+        top: 6rem;
+        left: 49rem;
+    }
+}

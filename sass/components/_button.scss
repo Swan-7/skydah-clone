@@ -1,0 +1,86 @@
+@mixin button($textColor: $secondary-color, $backgroundColor: $secondary-color-light) {
+    display: inline-block;
+    width: max-content;
+    padding: 0.4rem 2rem;
+    line-height: 2.5;
+    border-radius: 1.5rem;
+    font-size: 0.688rem;
+    background: $backgroundColor;
+    color: $textColor;
+    cursor: pointer;
+    transition: all 400ms ease;
+
+    &:hover {
+        background: darken($backgroundColor, 8%);
+        box-shadow: 0 1rem 1.6rem rgba($grey-color, $alpha: 0.2);
+    }
+}
+
+@mixin download_button($textColor: $grey-color-lighter, $backgroundColor: $white-color) {
+    line-height: 1.5;
+    padding: 0.5rem .7rem 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $background-color;
+    background: $backgroundColor;
+    color: $textColor;
+}
+
+.btn {
+    @include button();
+}
+
+.btn-primary {
+    @include button($primary-color, $white-color);
+    border: 1px solid $primary-color;
+    padding: 0.3rem 2.9rem;
+}
+
+.card_btn {
+    @include download_button();
+
+    .btn_container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+            width: 1rem;
+            height: 1.15rem;
+            margin: 0 0.6rem 0.2rem .3rem;
+        }
+
+        .btn_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .text {
+                font-size: 0.5rem;
+            }
+
+            .bold-text {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: $btn-bold_text;
+            }
+        }
+    }
+}
+
+.card_btn-1 {
+    @include download_button($white-color, $secondary-color);
+    border: none;
+
+    .btn_container {
+        .btn_text {
+            .bold-text {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.card_btn-2 {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
