@@ -21,6 +21,11 @@ body {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    place-items: center;
+}
+
 section {
     text-align: center;
 }
@@ -40,6 +45,13 @@ article {
 
 h1, h2, h3 {
     color: $grey-color;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
 }
 
 h2 {
