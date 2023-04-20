@@ -3,6 +3,36 @@
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 1;
+    margin-bottom: 14.5rem;
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &:before {
+        transform: scale(0.35);
+        transform-origin: center center;
+        width: 72.4rem;
+        height: 50.2rem;
+        left: -30.2rem;
+        top: -13.6rem;
+        background-image: url(/assets/hero_graphic-2.png);
+    }
+
+    &:after {
+        height: 22.75rem;
+        width: 12.5rem;
+        left: 56.5rem;
+        top: 1rem;
+        background-image: url(/assets/hero_graphic.png);
+    }
 }
 
 @mixin hero_container() {
@@ -17,7 +47,6 @@
 
 .hero {
     @include hero();
-    z-index: 1;
 
     .hero_article {
         position: relative;
@@ -45,34 +74,6 @@
         .btn {
             margin: auto
         }
-    }
-
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-    }
-
-    &:before {
-        transform: scale(0.35);
-        transform-origin: center center;
-        width: 72.4rem;
-        height: 50.2rem;
-        left: -30.2rem;
-        top: -13.6rem;
-        background-image: url(/assets/hero_graphic-2.png);
-    }
-
-    &:after {
-        height: 22.75rem;
-        width: 12.5rem;
-        left: 56.5rem;
-        top: 5rem;
-        background-image: url(/assets/hero_graphic.png);
     }
 }
 

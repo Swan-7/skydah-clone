@@ -1,0 +1,60 @@
+.about {
+    .about_us-section {
+        .section_content {
+            .container_image {
+                img {
+                    width: 77.9%;
+                }
+            }
+    
+            .container_article {
+    
+                p {
+                    padding-bottom: 1.3rem;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    
+    .team-section {
+        padding-bottom: 7rem;
+    
+        .hero {
+            margin-bottom: 8.8rem;
+    
+            .hero_article {
+                margin-top: 3rem;
+    
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    
+        .team_images {
+            display: flex;
+            width: 83%;
+    
+            .team_image {
+                text-align: center;
+    
+                img {
+                    width: 68%;
+                    margin: 0 auto;
+                    filter: grayscale(100%);
+                    padding-bottom: 1.5rem;
+                }
+    
+                h3 {
+                    font-weight: 400;
+                    padding-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .partnership_container {
+        margin-top: 10rem;
+    }
+}
