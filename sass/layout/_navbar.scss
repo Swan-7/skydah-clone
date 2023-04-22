@@ -7,13 +7,13 @@ nav {
     place-items: center;
 
     .container {
+        width: 80%;
         display: flex;
         justify-content: space-between;
 
         .nav_logo {
             display: flex;
             align-items: center;
-            font-size: 18px;
 
             img {
                 padding: 0.8rem;
@@ -21,10 +21,12 @@ nav {
             }
 
             h2 {
-                font-weight: 600;
+                font-weight: 700;
+                font-size: 1.5rem;
             
                 span {
                     font-weight: 300;
+                    font-size: 1.4rem;
                 }
             }
         }

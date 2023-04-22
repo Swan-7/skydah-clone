@@ -1,0 +1,136 @@
+.Individuals {
+    .individuals_hero {
+        .hero {
+            margin-bottom: 0;
+    
+            &:before {
+                top: -7.9rem;
+                left: -33.7rem;
+            }
+    
+            .hero_article {
+                top: 0.9rem;
+                margin-top: 5rem;
+    
+                h1 {
+                    font-size: 2.1rem;
+                }
+            }
+        }
+    
+        .hero_container {
+            height: 80vh;
+        }
+    }
+    
+    .individual_section {
+        margin-top: 7rem;
+    
+        .section_content {
+            margin: 5rem auto;
+            grid-template-columns: 55% 45%;
+    
+            &:before {
+                content: "";
+                position: absolute;
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -1;
+                height: 22.75rem;
+                width: 11rem;
+                left: -3.5rem;
+                top: 6.8rem;
+                background-image: url(/assets/hero_graphic.png);
+            }
+    
+            .section_article {
+                margin-left: 1rem;
+    
+                p {
+                    width: 80%;
+                    margin-bottom: 1rem;
+                }
+    
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    i {
+                        color: $primary-color;
+                        vertical-align: middle;
+                        margin-right: 1rem;
+                    }
+    
+                    p {
+                        display: inline;
+                        vertical-align: middle;
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .card_section {
+        .pricing_content {
+            width: 36.7rem;
+            height: 20rem;
+            padding: 4.9rem;
+            padding-top: 2rem;
+            border: 1px solid #B2CCFC;
+            border-radius: 0.8rem;
+            margin-bottom: 6rem;
+    
+            .price-header {
+                h2 {
+                    text-align: center;
+                    color: $primary-color;
+                    margin-bottom: 1.5rem;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            .price-list {
+                display: flex;
+                justify-content: space-between;
+    
+                ul {
+                    li {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 2rem;
+                    }
+    
+                    i {
+                        color: $primary-color;
+                        vertical-align: middle;
+                        margin-right: 1rem;
+                    }
+    
+                    p {
+                        display: inline;
+                        vertical-align: middle;
+                        color: #758FA4;
+                    }
+                }
+            }
+        }
+    
+        .btn-primary {
+            border: 1.34px solid $primary-color;
+            padding: 0.3rem 1rem;
+            margin-left: 5rem;
+        }
+    }
+
+    .partnership_container {
+        margin-top: 8rem;
+    }
+}
