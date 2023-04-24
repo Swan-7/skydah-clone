@@ -1,5 +1,23 @@
-@mixin hero() {
+@mixin hero($textColor: $grey-color, $backgroundColor: $white-color-light) {
+    background: $backgroundColor;
+    color: $textColor;
+}
+
+@mixin hero_container() {
     margin-top: 0.6rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    position: relative;
+    left: 5rem;
+}
+
+.hero {
+    @include hero();
+
+    margin-top: 0.6rem;
+    width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -20,32 +38,20 @@
         transform-origin: center center;
         width: 72.4rem;
         height: 50.2rem;
-        left: -30.2rem;
+        left: -22.2rem;
         top: -13.6rem;
         background-image: url(/assets/hero_graphic-2.png);
     }
 
     &:after {
+        transform: scale(1.02);
+        transform-origin: center center;
         height: 22.75rem;
         width: 12.5rem;
-        left: 51rem;
-        top: 0.2rem;
+        left: 64.3rem;
+        top: 1rem;
         background-image: url(/assets/hero_graphic.png);
     }
-}
-
-@mixin hero_container() {
-    margin-top: 0.6rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-between;
-    position: relative;
-    height: 100vh;
-    left: 5rem;
-}
-
-.hero {
-    @include hero();
 
     .hero_article {
         position: relative;
@@ -81,6 +87,10 @@
             width: 85%
         }
     }
+}
+
+.hero_primary {
+    @include hero($white-color, $primary-color);
 }
 
 .hero_container {

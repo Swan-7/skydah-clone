@@ -44,6 +44,10 @@
     @include button($white-color, $primary-color);
 }
 
+.btn-secondary-2 {
+    border: 1px solid $white-color;
+}
+
 .card_btn {
     @include download_button();
 

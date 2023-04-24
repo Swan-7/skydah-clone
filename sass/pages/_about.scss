@@ -1,10 +1,9 @@
 .about {
     .about_hero {
         .hero {
-            margin-bottom: 14.5rem;
 
             &:after {
-                left: 56.5rem;
+                left: 64rem;
                 top: 1rem;
             }
 
@@ -33,13 +32,14 @@
     }
 
     .team-section {
-        padding-bottom: 7rem;
+        padding-bottom: 23rem;
+        padding-top: 17rem;
+        display: flex;
+        flex-direction: column;
 
-        .hero {
-
-            .hero_article {
-                margin-top: 3rem;
-            }
+        .hero_article {
+            margin-top: 3rem;
+            margin-bottom: 10rem;
         }
 
         .team_images {
