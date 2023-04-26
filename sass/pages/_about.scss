@@ -1,70 +1,78 @@
-.about {
-    .about_hero {
-        .hero {
+ .about_hero {
+     .hero {
 
-            &:after {
-                left: 64rem;
-                top: 1rem;
-            }
+         &:after {
+             left: 64rem;
+             top: 1rem;
+         }
 
-            p {
-                width: 45%;
-            }
-        }
-    }
+         p {
+             width: 45%;
+         }
 
-    .about_us-section {
-        .section_content {
-            .container_image {
-                img {
-                    width: 77.9%;
-                }
-            }
+         .container {
+             .pricing {
 
-            .container_article {
+                 h1,
+                 p {
+                     margin-bottom: 4rem;
+                 }
+             }
+         }
+     }
+ }
 
-                p {
-                    padding-bottom: 1.3rem;
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
+ .about_us-section {
+     .section_content {
+         .container_image {
+             img {
+                 width: 77.9%;
+             }
+         }
 
-    .team-section {
-        padding-bottom: 23rem;
-        padding-top: 17rem;
-        display: flex;
-        flex-direction: column;
+         .container_article {
 
-        .hero_article {
-            margin-top: 3rem;
-            margin-bottom: 10rem;
-        }
+             p {
+                 padding-bottom: 1.3rem;
+                 font-size: 0.8rem;
+             }
+         }
+     }
+ }
 
-        .team_images {
-            display: flex;
-            width: 83%;
+ .team-section {
+     padding-bottom: 23rem;
+     padding-top: 17rem;
+     display: flex;
+     flex-direction: column;
 
-            .team_image {
-                text-align: center;
+     .hero_article {
+         margin-top: 3rem;
+         margin-bottom: 10rem;
+     }
 
-                img {
-                    width: 68%;
-                    margin: 0 auto;
-                    filter: grayscale(100%);
-                    padding-bottom: 1.5rem;
-                }
+     .team_images {
+         display: flex;
+         width: 83%;
 
-                h3 {
-                    font-weight: 400;
-                    padding-bottom: 0.5rem;
-                }
-            }
-        }
-    }
+         .team_image {
+             text-align: center;
 
-    .partnership_container {
-        margin-top: 10rem;
-    }
-}
+             img {
+                 width: 68%;
+                 margin: 0 auto;
+                 filter: grayscale(100%);
+                 padding-bottom: 1.5rem;
+             }
+
+             h3 {
+                 font-weight: 400;
+                 padding-bottom: 0.5rem;
+             }
+         }
+     }
+ }
+
+ .partnership_container {
+     margin-top: 10rem;
+ }
