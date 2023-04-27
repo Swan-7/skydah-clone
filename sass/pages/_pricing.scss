@@ -1,0 +1,101 @@
+.card_section {
+    display: flex;
+    flex-direction: row;
+    gap: 2.6rem;
+
+    .pricing_content {
+        width: max-content;
+        height: max-content;
+        padding: 2rem 4.9rem 2.5rem 4.9rem;
+        border: 1px solid #B2CCFC;
+        border-radius: 0.9rem;
+        margin-bottom: 6rem;
+
+        .price-header {
+            h2 {
+                text-align: center;
+                color: $primary-color;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .p2 {
+                text-align: center;
+                font-weight: 600;
+            }
+        }
+
+        .price-list {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                width: 13.5rem;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2rem;
+                }
+
+                i {
+                    color: $primary-color;
+                    vertical-align: middle;
+                    margin-right: 1rem;
+                }
+
+                p {
+                    display: inline;
+                    vertical-align: middle;
+                    color: #758FA4;
+                }
+            }
+        }
+    }
+
+    .individual_pricing {
+        padding-left: 2.7rem;
+        padding-right: 2.5rem;
+
+        .price-header {
+            h2 {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .individual_price-list {
+            flex-direction: column;
+
+            ul {
+                padding-left: 1.8rem;
+                padding-top: 1rem;
+
+                li {
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .btn-primary {
+                margin: 0 auto;
+                border: 1px solid $primary-color;
+                padding: 0.3rem 2.9rem;
+                margin-top: 2.4rem;
+            }
+        }
+    }
+
+    .btn-primary {
+        border: 1.34px solid $primary-color;
+        padding: 0.3rem 1rem;
+        margin-left: 5rem;
+    }
+}
+
+.cs2 {
+    display: flex;
+    flex-direction: column;
+}
