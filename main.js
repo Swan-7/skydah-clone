@@ -1,16 +1,23 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".next",
-      prevEl: ".prev",
-    },
-  });
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+});
+
+var nextButton = document.querySelector('.next');
+
+nextButton.addEventListener('click', function() {
+  swiper.slideNext();
+});
+
 
 const questions = document.querySelectorAll(".question");
 
@@ -25,4 +32,3 @@ questions.forEach((question) => {
   });
 });
 
-  

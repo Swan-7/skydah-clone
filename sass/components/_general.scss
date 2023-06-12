@@ -14,7 +14,6 @@ body {
     color: $grey-color-light;
     background-color: $white-color;
     overflow-x: hidden;
-    // margin-bottom: 40rem;
 }
 
 .container {
@@ -43,9 +42,9 @@ section {
 
 .section_content {
     margin: 5rem auto;
-    width: 78%;
+    width: 68%;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 55% 45%;
     transform: translateX(2%);
 }
 

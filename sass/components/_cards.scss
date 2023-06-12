@@ -22,13 +22,10 @@
 
         .card_box {
             width: 100%;
+            overflow: hidden;
 
             .card_box-2 {
-                position: relative;
-                left: -3rem;
                 display: flex;
-                overflow: hidden;
-                padding: 3rem 0.7rem 3rem 3rem;
 
                 .card {
                     width: 10.3rem;
@@ -97,34 +94,34 @@
                         }
                     }
                 }
+            }           
+        }
+        .arrow-box {
+            background: $white-color;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            border-radius: 14px;
+            box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.3);
+            z-index: 999;
+
+            .arrow {
+                width: 1.2rem;
             }
-
-            .arrow-box {
-                background: $white-color;
-                width: 4rem;
-                height: 4rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: absolute;
-                border-radius: 14px;
-                box-shadow: 0 2.2rem 2.5rem rgba($shadow-color, 0.3);
-
-                .arrow {
-                    width: 1.2rem;
-                }
-            }
+        }
 
 
-            .prev {
-                top: 5.5rem;
-                left: -7.5rem;
-            }
+        .prev {
+            top: 3.5rem;
+            left: -8.5rem;
+        }
 
-            .next {
-                top: 5.5rem;
-                left: 50rem;
-            }
+        .next {
+            top: 3.5rem;
+            left: 50rem;
         }
     }
 }
